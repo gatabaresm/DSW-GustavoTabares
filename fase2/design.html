@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2 Unidad 1 - Diseño y Construcción I</title>
+</head>
+<body>
+    <header>
+        <a name='inicio'></a>
+        <h1>Diseño de Sitios Web: Etiquetas semánticas, listas y enlaces</h1>
+    </header>
+    <hr/>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio: Fase 1 Unidad 1 - Planeación</a></li>
+            <li>Termas
+                <ul>
+                    <li><a href="#tema1">Tema 1</a></li>
+                    <li><a href="#tema2">Tema 2</a></li>
+                </ul>
+            </li>
+            <li>Recursos Digitales</li>
+                <ul>
+                    <li><a href="#recurso1">Recurso 1</a></li>
+                    <li><a href="#recurso2">Recurso 2</a></li>
+                </ul>
+            <li>Aprendizaje</li>
+                <ul>
+                    <li><a href="#">Actividad 1</a></li>
+                    <li><a href="#">Actividad 2</a></li>
+                </ul>
+            <li><a href="#acercade">Acerca de</a></li>
+        </ul>
+    </nav>
+    <hr/>
+    <section>
+        <h2>Propósito del sitio</h2>
+        <p>
+            El propósito de este sitio es fomentar el aprendizaje de diseño de sitios web, a través del uso de etiquetas semánticas, listas y enlaces...
+        </p>
+        <hr/>
+        <article>
+
+            <a name='tema1'></a>
+            <h3>Etiquetas Semánticas:</h3>
+            <p>
+                <h4>¿Qué son etiquetas semánticas?</h4>
+                <b>Semántica:</b> Perteneciente o relativo a la significación de las palabras. Esa es la definición de la Real Academia de la Lengua Española y es así de sencillo es entender este tipo de etiquetas del lenguaje HTML: Aquellas que dan un significado a las partes del documento.
+                Por decirlo de otra forma, estamos ante <b>etiquetas que indican qué es el contenido que contienen, en lugar de cómo se debe formatear</b> al mostrar el documento HTML en un cliente web.<br/><br/>
+                Pues bien, en HTML5 se han incorporado muchas etiquetas que sirven para indicar qué son y cuál es el significado de los elementos que contienen dentro. Esas son las etiquetas semánticas, que ganan mucha importancia en el marco del HTML y de la composición de un documento web por ayudar a motores de búsqueda como Google a indexar más correctamente los contenidos de un sitio.
+                
+                <h4>Etiquetas semánticas estructurales</h4>
+                Las etiquetas semánticas estructurales nos sirven para que los motores de búsqueda, o cualquier otro mecanismo automático que lea un sitio web, sepa con exactitud qué partes de su contenido corresponden a cada una de las partes típicas de un sitio. Generalmente, en cualquier documento tenemos una cabecera, un cuerpo y un pie de página, elementos que definen la estructura representados por diversas etiquetas.<br/><br/>
+                De este modo, HTML5 tiene una etiqueta HEADER, que debe englobar aquellos elementos correspondientes a la cabecera de la página. Tiene un FOOTER, que debe englobar todas las etiquetas que componen el pie. Luego, para el cuerpo realmente no existe una etiqueta en concreto, sino que se representará por diversas otras como SECTION, ARTICLE o ASIDE. Existirán además otras etiquetas que representan elementos típicos como la barra de navegación, etiqueta NAV.<br/><br/>
+                En la imagen de abajo se pueden ver las etiquetas estructurales más habituales, pero hay otras que podríamos utilizar dentro de las etiquetas semánticas. Además, la posición de estos elementos no tiene por qué ser así, incluso podrían anidarse de otras maneras. Quizás en nuestro sitio queramos colocar el navegador en la cabecera, en el lateral derecho o dentro del SECTION. Sería independiente siempre que utilicemos la etiqueta NAV para contenerlo. Asimismo, podrías tener más de un SECTION en el cuerpo de la página, sueltos o colocados dentro de otras etiquetas como ASIDE. Esos SECTION adicionales podrían tener otros ARTICLE o incluso, dentro de un SECTION, hacer otro esquema de cabecera y pie anidando otros HEADER y FOOTER.
+                <a name='recurso1'></a>
+            </p>
+            <img src="img/EtiquetasSemanticas.png" alt="Imagen de Etiqueta Semántica" title="Imagen de Etiqueta Semántica"/>
+            <h5>&#40;Imagen tomada de html5.png (540×270). (n.d.). Retrieved June 21, 2021, from https://www.arkaitzgarro.com/html5/images/cap02/html5.png&#41;</h5>
+            <p>
+                <h4>Las etiquetas semánticas no definen un estilo predeterminado</h4>
+                Las etiquetas semánticas no tienen un estilo predeterminado que el navegador nos vaya a asignar. Es decir, porque HEADER signifique que es una cabecera, el navegador no va en ningún caso a posicionar el elemento en la parte de arriba del documento. Lo mismo con FOOTER, que no lo colocará en la parte de abajo, o ASIDE al lateral.<br/><br/>
+                Somos nosotros los que, mediante CSS, debemos asignar los estilos que queramos se aplique a cada uno de esos elementos del documento HTML. Vuelvo a insistir en que las etiquetas semánticas no indican la forma como se deben mostrar, sino el significado que tienen dentro del contexto del documento.<br/><br/>
+                En este sentido, cabe recordar que desde hacer tiempo se viene trabajando para separar el contenido de la forma y las etiquetas semánticas suponen un paso más hacia ese objetivo. Por ello, todos los estilos y posicionamiento deben quedar a cargo de las CSS.
+                <h5>&#40;Información tomada de: Alvarez, M. A. (2012). Etiquetas semánticas del HTML5. https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html&#41;</h5>
+                <a href="#inicio">Ir al Inicio</a>
+            </p>
+            <hr/>
+            <a name='tema2'></a>
+            <h3>Listas y Enlaces:</h3>
+            <p>
+                <h4>Listas no ordenadas: &lt;ul&gt;</h4>
+                Las listas no ordenadas van dentro de la etiqueta &lt;ul&gt; HTML y de su cierre &lt;/ul&gt;. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta &lt;li&gt; y su cierre.<br/><br/>
+                Si no le indicamos nada a la etiqueta &lt;li&gt; HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.<br/><br/>
+                Así podemos hacer que la lista esté definida por puntos negros (li type=&#8221;disc&#8221;), por puntos con el fondo blanco (li type=&#8221;circle&#8221;) o por cuadrados (li type=&#8221;square&#8221;). Aunque esta apariencia dependerá del navegador. Hay algunos navegadores que dan otras apariencias a estos mismos atributos.
+                
+                <h4>Listas ordenadas: &lt;ol&gt;</h4>
+                Las listas ordenadas van enmarcadas dentro de las etiquetas &lt;ol&gt; &lt;/ol&gt;. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;li&gt;. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.<br/><br/>
+                En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.
+                
+                <h4>Listas de definiciones: &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;</h4>
+                Si lo que vamos a hacer es un listado de definiciones, podemos usar las etiquetas &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;. Vamos a explicarlas por partes:<br/><br/>
+                La etiqueta &lt;dl&gt; viene de los términos ingleses “Definiton list” y nos indica que dentro de ella, entre ella y su cierre, va a ir una definición.<br/><br/>
+                La etiqueta &lt;dt&gt; viene de los términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos mejor, dentro de &lt;dt&gt; iría el título de la definición.<br/><br/>
+                La etiqueta &lt;dd&gt; viene de los términos “Definition description” y nos dice que dentro de ésta irá la definición.<br/><br/>
+                Si escribimos varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación.
+                <h5>&#40;Información tomada de: Hazunaweb.com. (n.d.). Listas en HTML (Etiquetas ul, ol, li, dl, dt, dd) - Tutorial HTML. Listas Html. Retrieved June 22, 2021, from https://www.hazunaweb.com/curso-de-html/listas/&#41;</h5>
+
+                <h4>Enlaces HTML</h4>
+                Los enlaces en HTML nos permiten de una manera muy cómoda redirigir al usuario a otra parte, cuando éste pinche en dicho enlace. Podemos hacer que el usuario se vaya a otra url distinta a la que está, o podemos hacer que vaya a otra parte pero dentro del mismo archivo en el que está, dentro de la misma url.<br/><br/>
+               
+                <h5>La etiqueta &lt;a&gt;</h5>
+                Es dentro de esta etiqueta y de su cierre (&lt;/a&gt;) dónde encontraremos el enlace. Todo lo que esté dentro de ella, ya sea texto o una imagen, estará considerado como un enlace y el navegador lo interpretará así.<br/><br/>
+               
+                <h5>Atributo href</h5>
+                Para que un enlace esté activo debemos indicar dentro de él el destino del mismo. Para establecer este destino le colocamos a la etiqueta &lt;a&gt; este atributo. La etiqueta completa nos quedaría así:<br/>
+                &lt;a href=“enlace”&gt;Pincha aquí para ir al destino del enlace&lt;/a&gt;<br/><br/>
+
+                <h5>Direcciones absolutas y relativas</h5>
+                Las <u>direcciones absolutas</u> son aquellas que contienen la url completa. En estas direcciones podemos ver todos los elementos de la dirección. Un ejemplo muy claro es el siguiente:<br/>
+                &lt;a href="https://hazunaweb.com/curso-de-html/mapas-de-imagenes/"&gt;Artículo de mapas de imágenes&lt;/a&gt;<br/><br/>
+                
+                Si pincháramos en el enlace iríamos directamente al artículo de mapas de imágenes del tutorial. Fijaros en lo que hablábamos: podemos apreciar todas las partes de la url.<br/><br/>
+                En las <u>direcciones relativas</u> vemos que no está la url completa. En este tipo de direcciones, las partes que faltan de la dirección el navegador las genera de la propia página en la que está el enlace. Por ejemplo, si dentro de la página encontráramos la siguiente url&#8230;<br/>
+                &lt;a href=&#8221;/curso-de-html/mapas-de-imagenes/&#8221;&gt;Artículo de mapas de imágenes&lt;/a&gt;<br/><br/>
+                …el navegador entiende que dentro de la página y de la carpeta en la que se encuentra, debe dirigirse al fichero “mapas-de-imagenes”.
+
+                <h5>Protocolos</h5>
+                Los enlaces nos pueden llevar a url con diferentes protocolos. Nosotros os vamos a presentar los dos más importantes:
+                <ul>
+                    <li>http: Este es el protocolo básico de los servidores webs.</li>
+                    <li>https: Este protocolo se diferencia del anterior en que es un protocolo cifrado. Es decir, la información que se envía y se recibe con esa url esta siendo encriptada para que nadie más pueda interceptar y usar esa información. Las páginas con este protocolo son las conocidas como “páginas seguras”. Esta encriptación de los datos produce una pequeña ralentización de la página debido a que los datos se envían cifrados.</li>
+                </ul>
+
+                <h5>Mailto</h5>
+                La url mailto es aquella que te lleva directamente a una dirección de correo y, más concretamente, a redactar un mensaje. Una dirección mailto sería la siguiente:<br/>
+                &lt;a href=“mailto:correodeejemplo@correodeejemplo.com&gt;correodeejemplo@correodeejemplo.com&lt;/a&gt;<br/><br/>
+                
+                <h5>La etiqueta target:</h5>
+                La etiqueta sirve para definir la forma en la que se accederá a la nueva url. Esta etiqueta la escribimos dentro del enlace para predefinirla. Puede ser de diferentes tipos:
+                <ul>
+                    <li><strong>_self:</strong> Es el valor por defecto del parámetro target. El enlace se abrirá en el mismo marco en el que está alojado.</li>
+                    <li><strong>_blank:</strong> Para hacer que ese enlace se abra en una ventana a parte.</li>
+                    <li><strong>_top:</strong> Elimina todos los marcos existente y muestra la nueva página en la ventana original sin marcos.</li>
+                    <li><strong>_parent :</strong> Muestra la nueva página en el &lt;frameset&gt; que contiene al marco donde se encuentra alojado el enlace. La etiqueta &lt;frameset&gt; la explicamos en otro artículo.</li>
+                </ul>
+
+                <h5>Anclas HTML</h5>
+                Un ancla nos sirve para dirigir al usuario a otra parte distinta pero dentro del mismo fichero en el que estamos. Para crear un ancla debemos crear primero el lugar al que queremos acceder. Debemos escribir lo siguiente:<br/>
+                &lt;a name=“ancla”&gt;<br/><br/>
+                Y después debemos escribir un enlace con el código siguiente:<br/>
+                &lt;a href= “#ancla”&gt;Enlace para acceder al ancla&lt;/a&gt;<br/>
+
+                <h5>&#40;Información tomada de: Enlaces en HTML: Direcciones absolutas y relativas (Etiqueta a, ancla...). (n.d.). Retrieved June 22, 2021, from https://www.hazunaweb.com/curso-de-html/enlaces/#ejemplo&#41;</h5>
+                <a name='recurso2'></a>
+            </p>
+            <img src="img/ListasEnlaces.jpg" alt="Imagen de Listas y Enlaces" title="Imagen de Listas y Enlaces"/>
+            <h5>&#40;Imagen tomada de css-lecc-37_37-3.jpg (400×233). (n.d.). Retrieved June 21, 2021, from https://www.aulafacil.com/uploads/cursos/350/editor/css-lecc-37_37-3.jpg&#41;</h5>
+            <a href="#inicio">Ir al Inicio</a>
+        </article>
+    </section>
+    <hr/>
+    <h4>Mockup</h4>
+    <img src="img/Mockup-DSW-Fase2.png" title="Imagen del Mockup" alt="Imagen del Mockup" width="600px"/>
+    <hr/>
+    <footer>
+        <p>
+            <a name='acercade'></a>
+            <b>WhatsApp: </b>3217533733<br/>
+            <b>Skype: </b>gatabaresm@hotmail.com<br/>
+            <b>Email: </b>gatabaresm@unadvirtual.edu.co<br/>
+            <b>Fecha de Actualización:</b> lunes 22 de junio de 2021
+        </p>
+        <a href="#inicio">Ir al Inicio</a>
+    </footer>
+</body>
+</html>
