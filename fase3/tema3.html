@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 Unidad 2 - Diseño y Construcción II</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <img src="img/logohtml5.png" alt="Logo HTML5" title="Logo HTML5" height="150px">
+        <h1>HTML5 y CSS3: Etiquetas semánticas, listas y enlaces</h1>
+        <img src="img/logocss3.png" alt="Logo CSS3" title="Logo CSS3" height="150px">
+    </header>
+
+    <nav class="menu-area">
+        <ul >
+            <li><a href="#fases">Fases de Estudio</a>
+                <ul class="dropdown-1">
+                    <li><a href="../index.html">F1U1 <br/> Planeación</a></li>
+                    <li><a href="../fase2/design.html">F2U1 <br/> Construcción I</a></li>
+                    <li><a href="index.html">F3U2 <br/> Construcción II</a></li>
+                </ul>
+            </li>         
+            <li><a href="#temas">Temas</a>
+                <ul class="dropdown-1">
+                    <li><a href="tema1.html">Etiquetas Semánticas</a></li>
+                    <li><a href="tema2.html">Listas</a></li>
+                    <li><a href="tema3.html">Enlaces</a></li>
+                </ul>
+            </li>
+            <li><a href="#recursos">Recursos Digitales</a>
+                <ul class="dropdown-1">
+                    <li><a href="recurso1.html">Recurso 1</a></li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#aprendizaje">Aprendizaje</a>
+                <ul class="dropdown-1">
+                    <li><a href="actividad1.html">Actividad 1</a></li>
+                    <li><a href="actividad2.html">Actividad 2</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <section>
+            <article>
+                <h2>Enlaces</h2><br/>
+                <p>
+                    Los enlaces en HTML nos permiten de una manera muy cómoda redirigir al usuario a otra parte, cuando éste pinche en dicho enlace. Podemos hacer que el usuario se vaya a otra url distinta a la que está, o podemos hacer que vaya a otra parte pero dentro del mismo archivo en el que está, dentro de la misma url.<br/><br/>
+                
+                    <h5>La etiqueta &lt;a&gt;</h5>
+                    Es dentro de esta etiqueta y de su cierre (&lt;/a&gt;) dónde encontraremos el enlace. Todo lo que esté dentro de ella, ya sea texto o una imagen, estará considerado como un enlace y el navegador lo interpretará así.<br/><br/>
+                
+                    <h5>Atributo href</h5>
+                    Para que un enlace esté activo debemos indicar dentro de él el destino del mismo. Para establecer este destino le colocamos a la etiqueta &lt;a&gt; este atributo. La etiqueta completa nos quedaría así:<br/>
+                    &lt;a href=“enlace”&gt;Pincha aquí para ir al destino del enlace&lt;/a&gt;<br/><br/>
+
+                    <h5>Direcciones absolutas y relativas</h5>
+                    Las <u>direcciones absolutas</u> son aquellas que contienen la url completa. En estas direcciones podemos ver todos los elementos de la dirección. Un ejemplo muy claro es el siguiente:<br/>
+                    &lt;a href="https://hazunaweb.com/curso-de-html/mapas-de-imagenes/"&gt;Artículo de mapas de imágenes&lt;/a&gt;<br/><br/>
+                    
+                    Si pincháramos en el enlace iríamos directamente al artículo de mapas de imágenes del tutorial. Fijaros en lo que hablábamos: podemos apreciar todas las partes de la url.<br/><br/>
+                    En las <u>direcciones relativas</u> vemos que no está la url completa. En este tipo de direcciones, las partes que faltan de la dirección el navegador las genera de la propia página en la que está el enlace. Por ejemplo, si dentro de la página encontráramos la siguiente url&#8230;<br/>
+                    &lt;a href=&#8221;/curso-de-html/mapas-de-imagenes/&#8221;&gt;Artículo de mapas de imágenes&lt;/a&gt;<br/><br/>
+                    …el navegador entiende que dentro de la página y de la carpeta en la que se encuentra, debe dirigirse al fichero “mapas-de-imagenes”.<br/><br/>
+
+                    <h5>Protocolos</h5>
+                    Los enlaces nos pueden llevar a url con diferentes protocolos. Nosotros os vamos a presentar los dos más importantes:
+                    <ul>
+                        <li>http: Este es el protocolo básico de los servidores webs.</li>
+                        <li>https: Este protocolo se diferencia del anterior en que es un protocolo cifrado. Es decir, la información que se envía y se recibe con esa url esta siendo encriptada para que nadie más pueda interceptar y usar esa información. Las páginas con este protocolo son las conocidas como “páginas seguras”. Esta encriptación de los datos produce una pequeña ralentización de la página debido a que los datos se envían cifrados.</li><br/><br/>
+                    </ul>
+
+                    <h5>Mailto</h5>
+                    La url mailto es aquella que te lleva directamente a una dirección de correo y, más concretamente, a redactar un mensaje. Una dirección mailto sería la siguiente:<br/>
+                    &lt;a href=“mailto:correodeejemplo@correodeejemplo.com&gt;correodeejemplo@correodeejemplo.com&lt;/a&gt;<br/><br/>
+                    
+                    <h5>La etiqueta target:</h5>
+                    La etiqueta sirve para definir la forma en la que se accederá a la nueva url. Esta etiqueta la escribimos dentro del enlace para predefinirla. Puede ser de diferentes tipos:
+                    <ul>
+                        <li><strong>_self:</strong> Es el valor por defecto del parámetro target. El enlace se abrirá en el mismo marco en el que está alojado.</li>
+                        <li><strong>_blank:</strong> Para hacer que ese enlace se abra en una ventana a parte.</li>
+                        <li><strong>_top:</strong> Elimina todos los marcos existente y muestra la nueva página en la ventana original sin marcos.</li>
+                        <li><strong>_parent :</strong> Muestra la nueva página en el &lt;frameset&gt; que contiene al marco donde se encuentra alojado el enlace. La etiqueta &lt;frameset&gt;</li><br/><br/>
+                    </ul>
+
+                    <h5>Anclas HTML</h5>
+                    Un ancla nos sirve para dirigir al usuario a otra parte distinta pero dentro del mismo fichero en el que estamos. Para crear un ancla debemos crear primero el lugar al que queremos acceder. Debemos escribir lo siguiente:<br/>
+                    &lt;a name=“ancla”&gt;<br/><br/>
+                    Y después debemos escribir un enlace con el código siguiente:<br/>
+                    &lt;a href= “#ancla”&gt;Enlace para acceder al ancla&lt;/a&gt;<br/><br/>
+
+                    <h5>&#40;Información tomada de: Enlaces en HTML: Direcciones absolutas y relativas (Etiqueta a, ancla...). (n.d.). Retrieved June 22, 2021, from https://www.hazunaweb.com/curso-de-html/enlaces/#ejemplo&#41;</h5>
+                    <a name='recurso2'></a>
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Sección Lateral</h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+    </div>
+
+    <footer>
+        <p class="pie">
+            <a name='acercade'></a>
+            <b>WhatsApp: </b>3217533733<br/>
+            <b>Skype: </b>gatabaresm@hotmail.com<br/>
+            <b>Email: </b>gatabaresm@unadvirtual.edu.co<br/>
+            <b>Fecha de Actualización:</b> lunes 5 de julio de 2021
+        </p>
+    </footer>
+</body>
+</html>
