@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNAD - F4U3 - Diseño y Construcción III</title>
+    <title>UNAD - F5 - Evaluación y Mejoramiento</title>
     <meta name="description" content="El propósito de este sitio es fomentar el aprendizaje de diseño de sitios web, a través del uso de etiquetas semánticas, listas y enlaces. El autor es Gustavo Tabares estudiante de la UNAD CEAD Eje Cafetero"/>
     <meta name="keywords" content="html, html5, css, css3, etiquetas semanticas, listas, enlaces, aprendizaje, video, cuestionario"/>
     <link rel="stylesheet" href="css/estilos.css">
@@ -76,12 +76,12 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="index.html"
+                    <a class="dropdown-item" href="../fase4/index.html"
                       >F4U3 - Construcción III</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../fase5/index.html"
+                    <a class="dropdown-item" href="index.html"
                       >F5 - Evaluación y Mejoramiento</a
                     >
                   </li>
@@ -168,10 +168,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="autor.html">
-                    Autor
-                  </a>
-              </li>
+                <a class="nav-link active" aria-current="page" href="autor.html">
+                  Autor
+                </a>
+            </li>
             </ul>
           </div>
         </div>
@@ -180,21 +180,25 @@
     <main class="container">
         <section class="row">
             <article class="col-lg-8">
-                <h2>Propósito del sitio</h2><br/>
-            <p>
-                El propósito de este sitio es fomentar el aprendizaje de diseño de sitios web, a través del uso de etiquetas semánticas, listas y enlaces...<br/><br/>
-            </p>
-            <h2>Introducción</h2><br/>
-            <p>
-                <h4>¿Qué son etiquetas semánticas?</h4><br/>
-                <b>Semántica:</b> Perteneciente o relativo a la significación de las palabras. Esa es la definición de la Real Academia de la Lengua Española y  así de sencillo es entender este tipo de etiquetas del lenguaje HTML: Aquellas que dan un significado a las partes del documento.
-                Por decirlo de otra forma, estamos ante <b>etiquetas que indican qué es el contenido que contienen, en lugar de cómo se debe formatear</b> al mostrar el documento HTML en un cliente web.<br/><br/>
-                Pues bien, en HTML5 se han incorporado muchas etiquetas que sirven para indicar qué son y cuál es el significado de los elementos que contienen dentro. Esas son las etiquetas semánticas, que ganan mucha importancia en el marco del HTML y de la composición de un documento web por ayudar a motores de búsqueda como Google a indexar más correctamente los contenidos de un sitio.<br/><br/>
-                <h4>¿Que son las listas en HTML?</h4><br/>
-                Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página, todos los cuales irán precedidos, generalmente, por un guión o número.<br/><br/>
-                <h4>¿Que son los enlaces HTML?</h4><br/>
-                Los enlaces en HTML nos permiten de una manera muy cómoda redirigir al usuario a otra parte, cuando éste pinche en dicho enlace. Podemos hacer que el usuario se vaya a otra url distinta a la que está, o podemos hacer que vaya a otra parte pero dentro del mismo archivo en el que está, dentro de la misma url.<br/><br/>
-            </p>
+                <h2>Listas</h2><br/>
+                <p>
+                    <h4>Listas no ordenadas: &lt;ul&gt;</h4>
+                    Las listas no ordenadas van dentro de la etiqueta &lt;ul&gt; HTML y de su cierre &lt;/ul&gt;. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta &lt;li&gt; y su cierre.<br/><br/>
+                    Si no le indicamos nada a la etiqueta &lt;li&gt; HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.<br/><br/>
+                    Así podemos hacer que la lista esté definida por puntos negros (li type=&#8221;disc&#8221;), por puntos con el fondo blanco (li type=&#8221;circle&#8221;) o por cuadrados (li type=&#8221;square&#8221;). Aunque esta apariencia dependerá del navegador. Hay algunos navegadores que dan otras apariencias a estos mismos atributos.<br/><br/>
+                    
+                    <h4>Listas ordenadas: &lt;ol&gt;</h4>
+                    Las listas ordenadas van enmarcadas dentro de las etiquetas &lt;ol&gt; &lt;/ol&gt;. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;li&gt;. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.<br/><br/>
+                    En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.<br/><br/>
+                    
+                    <h4>Listas de definiciones: &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;</h4>
+                    Si lo que vamos a hacer es un listado de definiciones, podemos usar las etiquetas &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;. Vamos a explicarlas por partes:<br/><br/>
+                    La etiqueta &lt;dl&gt; viene de los términos ingleses “Definition list” y nos indica que dentro de ella, entre ella y su cierre, va a ir una definición.<br/><br/>
+                    La etiqueta &lt;dt&gt; viene de los términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos mejor, dentro de &lt;dt&gt; iría el título de la definición.<br/><br/>
+                    La etiqueta &lt;dd&gt; viene de los términos “Definition description” y nos dice que dentro de ésta irá la definición.<br/><br/>
+                    Si escribimos varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación.<br/><br/>
+                    <h6>&#40;Información tomada de: Hazunaweb.com. (n.d.). Listas en HTML (Etiquetas ul, ol, li, dl, dt, dd) - Tutorial HTML. Listas Html. Retrieved June 22, 2021, from https://www.hazunaweb.com/curso-de-html/listas/&#41;</h6>
+                </p>
             </article>
             <aside class="col-lg-4">
                 <h3>Sección Lateral</h3>

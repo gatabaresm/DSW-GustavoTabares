@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNAD - F4U3 - Diseño y Construcción III</title>
+    <title>UNAD - F5 - Evaluación y Mejoramiento</title>
     <meta name="description" content="El propósito de este sitio es fomentar el aprendizaje de diseño de sitios web, a través del uso de etiquetas semánticas, listas y enlaces. El autor es Gustavo Tabares estudiante de la UNAD CEAD Eje Cafetero"/>
     <meta name="keywords" content="html, html5, css, css3, etiquetas semanticas, listas, enlaces, aprendizaje, video, cuestionario"/>
     <link rel="stylesheet" href="css/estilos.css">
@@ -76,12 +76,12 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="index.html"
+                    <a class="dropdown-item" href="../fase4/index.html"
                       >F4U3 - Construcción III</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../fase5/index.html"
+                    <a class="dropdown-item" href="index.html"
                       >F5 - Evaluación y Mejoramiento</a
                     >
                   </li>
@@ -168,10 +168,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="autor.html">
-                    Autor
-                  </a>
-              </li>
+                <a class="nav-link active" aria-current="page" href="autor.html">
+                  Autor
+                </a>
+            </li>
             </ul>
           </div>
         </div>
@@ -180,21 +180,23 @@
     <main class="container">
         <section class="row">
             <article class="col-lg-8">
-                <h2>Propósito del sitio</h2><br/>
-            <p>
-                El propósito de este sitio es fomentar el aprendizaje de diseño de sitios web, a través del uso de etiquetas semánticas, listas y enlaces...<br/><br/>
-            </p>
-            <h2>Introducción</h2><br/>
-            <p>
-                <h4>¿Qué son etiquetas semánticas?</h4><br/>
-                <b>Semántica:</b> Perteneciente o relativo a la significación de las palabras. Esa es la definición de la Real Academia de la Lengua Española y  así de sencillo es entender este tipo de etiquetas del lenguaje HTML: Aquellas que dan un significado a las partes del documento.
-                Por decirlo de otra forma, estamos ante <b>etiquetas que indican qué es el contenido que contienen, en lugar de cómo se debe formatear</b> al mostrar el documento HTML en un cliente web.<br/><br/>
-                Pues bien, en HTML5 se han incorporado muchas etiquetas que sirven para indicar qué son y cuál es el significado de los elementos que contienen dentro. Esas son las etiquetas semánticas, que ganan mucha importancia en el marco del HTML y de la composición de un documento web por ayudar a motores de búsqueda como Google a indexar más correctamente los contenidos de un sitio.<br/><br/>
-                <h4>¿Que son las listas en HTML?</h4><br/>
-                Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página, todos los cuales irán precedidos, generalmente, por un guión o número.<br/><br/>
-                <h4>¿Que son los enlaces HTML?</h4><br/>
-                Los enlaces en HTML nos permiten de una manera muy cómoda redirigir al usuario a otra parte, cuando éste pinche en dicho enlace. Podemos hacer que el usuario se vaya a otra url distinta a la que está, o podemos hacer que vaya a otra parte pero dentro del mismo archivo en el que está, dentro de la misma url.<br/><br/>
-            </p>
+                <h2>Etiquetas Semánticas</h2><br/>
+                <p>
+                    <h4>Etiquetas semánticas estructurales</h4>
+                    Las etiquetas semánticas estructurales nos sirven para que los motores de búsqueda, o cualquier otro mecanismo automático que lea un sitio web, sepa con exactitud qué partes de su contenido corresponden a cada una de las partes típicas de un sitio. Generalmente, en cualquier documento tenemos una cabecera, un cuerpo y un pie de página, elementos que definen la estructura representados por diversas etiquetas.<br/><br/>
+                    De este modo, HTML5 tiene una etiqueta HEADER, que debe englobar aquellos elementos correspondientes a la cabecera de la página. Tiene un FOOTER, que debe englobar todas las etiquetas que componen el pie. Luego, para el cuerpo realmente no existe una etiqueta en concreto, sino que se representará por diversas otras como SECTION, ARTICLE o ASIDE. Existirán además otras etiquetas que representan elementos típicos como la barra de navegación, etiqueta NAV.<br/><br/>
+                    En la imagen de abajo se pueden ver las etiquetas estructurales más habituales, pero hay otras que podríamos utilizar dentro de las etiquetas semánticas. Además, la posición de estos elementos no tiene por qué ser así, incluso podrían anidarse de otras maneras. Quizás en nuestro sitio queramos colocar el navegador en la cabecera, en el lateral derecho o dentro del SECTION. Sería independiente siempre que utilicemos la etiqueta NAV para contenerlo. Asimismo, podrías tener más de un SECTION en el cuerpo de la página, sueltos o colocados dentro de otras etiquetas como ASIDE. Esos SECTION adicionales podrían tener otros ARTICLE o incluso, dentro de un SECTION, hacer otro esquema de cabecera y pie anidando otros HEADER y FOOTER.
+                    <br/><br/>
+                </p>
+                <img src="img/EtiquetasSemanticas.png" alt="Imagen de Etiqueta Semántica" title="Imagen de Etiqueta Semántica"/>
+                <h6>&#40;Imagen tomada de html5.png (540×270). (n.d.). Retrieved June 21, 2021, from https://www.arkaitzgarro.com/html5/images/cap02/html5.png&#41;</h6><br/>
+                <p>
+                    <h4>Las etiquetas semánticas no definen un estilo predeterminado</h4>
+                    Las etiquetas semánticas no tienen un estilo predeterminado que el navegador nos vaya a asignar. Es decir, porque HEADER signifique que es una cabecera, el navegador no va en ningún caso a posicionar el elemento en la parte de arriba del documento. Lo mismo con FOOTER, que no lo colocará en la parte de abajo, o ASIDE al lateral.<br/><br/>
+                    Somos nosotros los que, mediante CSS, debemos asignar los estilos que queramos se aplique a cada uno de esos elementos del documento HTML. Vuelvo a insistir en que las etiquetas semánticas no indican la forma como se deben mostrar, sino el significado que tienen dentro del contexto del documento.<br/><br/>
+                    En este sentido, cabe recordar que desde hacer tiempo se viene trabajando para separar el contenido de la forma y las etiquetas semánticas suponen un paso más hacia ese objetivo. Por ello, todos los estilos y posicionamiento deben quedar a cargo de las CSS.<br/><br/>
+                    <h6>&#40;Información tomada de: Alvarez, M. A. (2012). Etiquetas semánticas del HTML5. https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html&#41;</h6>
+                </p>
             </article>
             <aside class="col-lg-4">
                 <h3>Sección Lateral</h3>
